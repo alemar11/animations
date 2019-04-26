@@ -27,7 +27,6 @@ class ViewController4: UIViewController {
   }
   
   @objc func update(link: CADisplayLink) {
-    var increment = 1
     guard view.frame.intersects(movableView.frame) else {
       displayLink.isPaused = true
       print("end")
